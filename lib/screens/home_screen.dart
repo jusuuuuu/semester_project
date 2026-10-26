@@ -149,6 +149,14 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
+
+              // Added: Submit a Report button
+              const SizedBox(height: 12),
+              OutlinedButton.icon(
+                onPressed: () => context.go('/report'),
+                icon: const Icon(Icons.feedback_outlined),
+                label: const Text('Submit a Report'),
+              ),
             ],
           );
 
